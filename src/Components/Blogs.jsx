@@ -6,7 +6,7 @@ const Blogs = () => {
   const {posts , loading , handlePageChange} = useContext(AppContext);
 
   return (
-    <div className='flex max-w-[700px] w-11/12 mx-auto flex-col py-5 gap-10'>
+    <div className='flex max-w-[700px] w-11/12 mx-auto flex-col py-5 gap-10 mb-16'>
     {
       loading ? <Spinner/> : (
         posts.length==0 ? (<div>No Post Found</div>) : (posts.map((post)=>
